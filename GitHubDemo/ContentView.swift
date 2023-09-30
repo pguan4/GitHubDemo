@@ -14,6 +14,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, Peter!")
+            Button("Hello", action: pressedHI)
         }
         .padding()
     }
@@ -21,4 +22,8 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+func pressedHI(){
+    print("Hello")
 }
